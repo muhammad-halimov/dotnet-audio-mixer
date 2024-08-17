@@ -2,9 +2,9 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="400"
-        MinWidth="600" MinHeight="400"
-        Width="600" Height="400"
+        mc:Ignorable="d" d:DesignWidth="1050" d:DesignHeight="650"
+        MinWidth="1050" MinHeight="650"
+        Width="1050" Height="650"
         x:Class="AvaloniaApplication1.MainWindow"
         Title="LOUDNESS METER">
     <Window.Styles>
