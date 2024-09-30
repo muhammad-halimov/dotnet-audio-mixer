@@ -7,13 +7,27 @@
         Width="1050" Height="650"
         x:Class="AvaloniaApplication1.MainWindow"
         Icon="./src/media/img/favicon.ico"
-        Title="LOUDNESS METER">
+        Title="LOUDNESS METER"
+        TransparencyLevelHint="AcrylicBlur"
+        Background="Transparent"
+        ExtendClientAreaToDecorationsHint="True">
     <Window.Styles>
         <StyleInclude Source="./src/styles/Main.axaml"/>
     </Window.Styles>
+    
     <Grid RowDefinitions="Auto, *, Auto" >
+        <ExperimentalAcrylicBorder IsHitTestVisible="False">
+            <ExperimentalAcrylicBorder.Material>
+                <ExperimentalAcrylicMaterial
+                    BackgroundSource="Digger"
+                    TintColor="Black"
+                    TintOpacity="1"
+                    MaterialOpacity="0.65" />
+            </ExperimentalAcrylicBorder.Material>
+        </ExperimentalAcrylicBorder>
+        
         <!-- Title Bar -->
-        <Grid Grid.Row="0" Background="Orange" Height="40" ColumnDefinitions="Auto, Auto, *, Auto, Auto">
+        <Grid Grid.Row="0" Height="40" Background="#e5e5e5" ColumnDefinitions="Auto, Auto, *, Auto, Auto">
             <Rectangle Grid.Column="0" Fill="Red" Width="40"/>
             <Rectangle Grid.Column="1" Fill="Blue" Width="40"/>
             <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
